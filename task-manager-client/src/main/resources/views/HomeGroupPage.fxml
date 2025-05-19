@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.12"
+      spacing="20" style="-fx-padding: 30;">
+
+    <Label style="-fx-font-size: 16; -fx-text-fill: #888;" text="Please select a project to view its tasks." />
+
+</VBox>
+

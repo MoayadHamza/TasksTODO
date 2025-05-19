@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" prefWidth="400" spacing="15" style="-fx-padding: 20; -fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.CreateGroupController">
+
+    <Label style="-fx-font-size: 18; -fx-font-weight: bold;" text="Create New Group" />
+
+    <TextField fx:id="groupNameField" maxWidth="300" promptText="Group Name" />
+   <TextArea fx:id="descriptionField" maxWidth="300.0" promptText="Description" wrapText="true" />
+
+    <Label fx:id="errorLabel" textFill="RED" />
+
+    <Button maxWidth="200" onAction="#handleCreateGroup" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-cursor: hand;" text="Create Group" />
+
+</VBox>

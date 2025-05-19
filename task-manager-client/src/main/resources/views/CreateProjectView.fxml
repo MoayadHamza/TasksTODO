@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" prefWidth="400" spacing="15" style="-fx-padding: 30;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.CreateProjectController">
+
+    <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Create Personal Project" />
+
+    <TextField fx:id="nameField" maxWidth="300" promptText="Project Name" />
+   <TextArea fx:id="descriptionField" maxWidth="300.0" promptText="Description" wrapText="true" />
+
+    <Label fx:id="messageLabel" textFill="red" wrapText="true" />
+
+    <Button maxWidth="200" onAction="#handleCreate" style="-fx-background-color: #1abc9c; -fx-text-fill: white; -fx-cursor: hand;" text="Create Project" />
+
+</VBox>

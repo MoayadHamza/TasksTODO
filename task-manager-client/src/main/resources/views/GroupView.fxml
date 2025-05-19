@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.controller.GroupViewController">
+
+    <!-- TOP: Group Info -->
+    <top>
+        <VBox spacing="10" style="-fx-padding: 15;">
+            <ComboBox fx:id="projectComboBox" promptText="Select a project..." />
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Label fx:id="groupTitleLabel" style="-fx-font-size: 20; -fx-font-weight: bold;" />
+                <Button fx:id="editGroupBtn" onAction="#handleEditGroup" text="Edit Group" />
+                <Button fx:id="deleteGroupBtn" onAction="#handleDeleteGroup" style="-fx-background-color: #e74c3c; -fx-text-fill: white;" text="Delete Group" />
+            </HBox>
+            <Label fx:id="groupDescriptionLabel" wrapText="true" />
+        </VBox>
+    </top>
+
+    <!-- CENTER: Main content -->
+    <center>
+        <StackPane fx:id="mainContentArea" style="-fx-background-color: #ffffff;">
+        </StackPane>
+    </center>
+
+    <!-- BOTTOM: Leave group -->
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" style="-fx-padding: 10;">
+         <Button fx:id="viewMembersBtn" mnemonicParsing="false" onAction="#handleViewMembers" text="Group Members" />
+         <Pane HBox.hgrow="ALWAYS" />
+            <Button fx:id="leaveGroupBtn" onAction="#handleLeaveGroup" style="-fx-background-color: #bdc3c7;" text="Leave Group" />
+        </HBox>
+    </bottom>
+
+</BorderPane>
